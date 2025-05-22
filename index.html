@@ -16,6 +16,48 @@
     <link href="assets/css/style.min.css" rel="stylesheet">
 </head>
 
+<style>
+  /* Pastikan container tidak overflow */
+  .intro-content .container {
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  /* Header utama agar teks tidak melebar */
+  .intro-title {
+    font-size: 2.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  /* Subjudul dengan slider teks juga bisa pindah baris */
+  .intro-subtitle {
+    font-size: 1.1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  /* Agar span slider bisa wrap juga */
+  .text-slider-items {
+    display: inline-block;
+    white-space: normal !important;
+  }
+
+  /* Responsive font size untuk layar kecil */
+  @media (max-width: 576px) {
+    .intro-title {
+      font-size: 1.8rem;
+    }
+    .intro-subtitle {
+      font-size: 0.95rem;
+    }
+  }
+</style>
+
+
 <body id="page-top">
     <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
         <div class="container">
@@ -65,25 +107,27 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="box-shadow-full">
-                                    <p class="d-description text-center">Download AnimeVerse X Sesuai dengan perangkat
-                                        anda</p>
+                                    <p class="d-description text-center">Download AnimeVerse X Sesuai dengan perangkat anda</p>
                                     <div class="button-group text-center">
-                                        <a href="https://node.andaraz.com/app-x86_64-release.apk" class="button-dark button-wide-mobile">AnimeVerse X&emsp;
-                                            <br />
-                                            <span class="text-muted small">Universal (All arch) | API level 23+</span>
-                                        </a>
-                                        <a href="https://node.andaraz.com/app-arm64-v8a-release.apk" class="button-dark button-wide-mobile">AnimeVerse X&emsp;
-                                            <br />
+                                        <a href="https://node.andaraz.com/app-arm64-v8a-release.apk" class="button-dark button-wide-mobile">
+                                            AnimeVerse X&emsp;<br />
                                             <span class="text-muted small">arm64-v8a | API level 23+</span>
                                         </a>
-                                        <a href="https://node.andaraz.com/app-armeabi-v7a-release.apk" class="button-dark button-wide-mobile">AnimeVerse X&emsp;
-                                            <br />
+                                        <a href="https://node.andaraz.com/app-armeabi-v7a-release.apk" class="button-dark button-wide-mobile">
+                                            AnimeVerse X&emsp;<br />
                                             <span class="text-muted small">armeabi-v7a | API level 23+</span>
+                                        </a>
+                                        <br /><br />
+                                        <a href="https://t.me/zenextchat" target="_blank" class="button-dark button-wide-mobile" style="background-color: #0088cc; color: #fff;">
+                                            Gabung Group Chat Support
+                                            <br />
+                                            <span class="small">Klik untuk bergabung di Telegram</span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </section>
                 <section id="features" class="features-mf pt-5 route mb-5">
